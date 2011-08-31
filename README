@@ -1,0 +1,35 @@
+# crawl
+
+   ..................	 ....................
+   .fips collection .  	 .   feed thread    .
+   .   (mongodb)    .----.		    .
+   .................. 	 ....................
+		      	       	  |
+       	       	     	 .........v..........
+       	       	       	 .  blocking queue  .
+ 			 .  	   	    .
+ 			 ....................
+ 		      /	       	  |	      \
+     ................v 	 .........v..........  v ................
+     .	fetch thread . 	 .   fetch thread   .  	 . fetch thread	.
+     .................	 ....................  	 ................
+		     \ 	       	  |    	       /
+		       v .........v..........v
+		         .  plans colletion .
+       	       	       	 .     (mongodb)    .
+         		 ....................
+
+
+## usage
+		   
+FIXME: write
+
+## Installation
+
+FIXME: write
+
+## License
+
+Copyright (C) 2010 FIXME
+
+Distributed under the Eclipse Public License, the same as Clojure.
